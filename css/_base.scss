@@ -5,9 +5,15 @@ $white: #fff;
 $light-gray: #f8f9fa;
 $gray: #e9ecef;
 $dark-gray: #495057;
-$font-family: Arial, sans-serif;
+$font-family: Inter, sans-serif;
 $font-size-base: 16px;
 $line-height-base: 1.5;
+
+
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 769px;
 
 * {
     margin: 0;

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boutique - Livremer</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">Livremer</a>
+            </div>
+                
+
+                <input type="checkbox" id="menu-toggle" class="nav-toggle">
+                <label for="menu-toggle" class="nav-burger">
+                    <img src="icons/menu.png" alt="Menu">
+                </label>
+                
+                <ul class="nav-menu">
+                   <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link">Boutique</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li> 
+                    <li class="nav-item"><a href="service.html" class="nav-link">Service clientèle</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon">
+                    <img src="icons/heart.png" alt="Favorites">
+                    </a>
+                    <a href="#" class="nav-icon">
+                         <img src="icons/cart.png" alt="сart">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="page-title">Contactez-nous</h1>
+                
+                <div class="contact-layout">
+                    <div class="contact-form-section">
+                        <h2 class="section-title">Envoyez-nous un message</h2>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nom *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="surname" class="form-label">Nom de famille *</label>
+                                    <input type="text" id="surname" name="surname" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Sujet *</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="question">Question générale</option>
+                                    <option value="return">Demande de retour</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="comments" class="form-label">Commentaires</label>
+                                <textarea id="comments" name="comments" class="form-textarea" rows="5" placeholder="Veuillez fournir des détails concernant votre demande..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Soumettre</button>
+                        </form>
+                    </div>
+                    
+
+                    <div class="contact-info-section">
+                        <h2 class="section-title">Nous contacter</h2>
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <h3 class="contact-info-title">Addresse</h3>
+                                <p class="contact-info-text">Belgique</p>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <h3 class="contact-info-title">Email</h3>
+                                <p class="contact-info-text">
+                                    <a href="mailto:info@Livremer.com">info@Livremer.com</a></p>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <h3 class="contact-info-title">Téléphone</h3>
+                                <p class="contact-info-text">
+                                    <a>(555) 123-BOOK</a>
+                                </p>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <h3 class="contact-info-title">Heures d'ouverture</h3>
+                                <p class="contact-info-text">
+                                Du lundi au vendredi : de 9h à 20h<br>
+                                Samedi : 10h 00 - 18h 00<br>
+                                Dimanche : 12h 00 - 17h 00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer-column">
+                                                        <div class="nav-link">
+                    <a href="index.html" class="nav-link">English</a>
+                    <a href="index.html" class="nav-link">Français</a>
+                    </div>
+            </div>
+                    <p class="copyright">© 2025 Livremer.</p></div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Liens rapides</h3>
+                    <ul class="links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="shop.html">Boutique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                <h3 class="footer-title">Suivez-nous</h3>
+                    <div class="social">
+                        <a href="#" class="social-link">
+                             <img src="icons/facebook.png">
+                        </a>
+                        <a href="#" class="social-link">
+                           <img src="icons/twitter.png">
+                        </a>
+                        <a href="#" class="social-link">
+                             <img src="icons/instagram.png">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

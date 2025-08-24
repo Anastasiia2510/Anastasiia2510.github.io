@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
         padding: 0 15px;
     }
 }
@@ -28,7 +28,7 @@ body {
     }
 
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
         padding: 40px 0;
     }
 }
@@ -40,7 +40,7 @@ body {
     margin-bottom: 40px;
     color: $primary-color;
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
         font-size: 2rem;
         margin-bottom: 30px;
     }
@@ -53,7 +53,7 @@ body {
     margin-bottom: 50px;
     color: $primary-color;
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
         font-size: 2.5rem;
         margin-bottom: 30px;
     }
@@ -91,7 +91,7 @@ body {
         }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
         width: 100%;
         margin-bottom: 10px;
     }
@@ -123,21 +123,78 @@ body {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
-    @media (max-width: 768px) {font-size: 3rem;}
-    @media (max-width: 480px) {font-size: 2.5rem;}
+    @media (max-width: $tablet) {font-size: 3rem;}
+    @media (max-width: $mobile) {font-size: 2.5rem;}
     }
+&-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+     }
+}
 
     &-buttons {
         display: flex;
         gap: 20px;
         justify-content: center;
 
-        @media (max-width: 480px) {
+        @media (max-width: $mobile) {
             flex-direction: column;
             gap: 15px;
         }
     }
 }
+
+
+.newsletter {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    &-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: $primary-color;
+
+        @media (max-width: $mobile) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &-text {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        color: $secondary-color;
+    }
+
+    &-form {
+        display: flex;
+        gap: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &-input {
+        flex: 1;
+        padding: 12px 16px;
+        border: 2px solid $gray;
+        border-radius: 5px;
+        font-size: 1rem;
+
+        &:focus {
+            outline: none;
+            border-color: $accent-color;
+        }
+    }
+}
+
+
+
 
 
 .page {
@@ -165,3 +222,45 @@ body {
         }
     }
 }
+
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    margin-top: 30px;
+
+    @media (max-width: $tablet) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.contact-info {
+    &-item {
+        margin-bottom: 30px;
+    }
+
+    &-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: $primary-color;
+    }
+
+    &-text {
+        line-height: 1.6;
+        color: $dark-gray;
+
+        a {
+            color: $accent-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
