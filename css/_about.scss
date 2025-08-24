@@ -69,7 +69,19 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
+
+    &-stars {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 20px;
+        
+        i {
+            font-size: 20px;
+            color: $accent-color;
+        }
+    }
+
     &-text {
         font-style: italic;
         margin-bottom: 20px;

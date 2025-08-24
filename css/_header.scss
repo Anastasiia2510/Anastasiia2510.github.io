@@ -32,7 +32,7 @@
         display: flex;
         list-style: none;
         gap: 30px;
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             position: fixed;
             top: 70px;
             left: -100%;
@@ -43,6 +43,19 @@
             justify-content: flex-start;
             padding: 20px;
             transition: left 0.3s ease;
+        }
+    }
+
+    &-item {
+        position: relative;
+
+        &--dropdown {
+            &:hover .nav-dropdown {
+                display: block;
+                @media (max-width: $tablet) {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -89,24 +102,33 @@
     &-icons {
         display: flex;
         gap: 20px;
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             gap: 15px;
         }
     }
 
     &-icon {
         display: block;
-        img {
-            width: 24px;
-            height: 24px;
-            filter: brightness(0) invert(1);
+        text-decoration: none !important;
+        
+        i {
+            font-size: 24px;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        &:hover i {
+            color: lighten($accent-color, 20%);
+        }
+        &--active {
+            color: $accent-color;
         }
     }
 
     &-toggle {
         display: none;
         &:checked ~ .nav-menu {
-            @media (max-width: 768px) {
+            @media (max-width: $tablet) {
                 left: 0;
             }
         }
@@ -115,13 +137,21 @@
     &-burger {
         display: none;
         cursor: pointer;
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             display: block;
         }
-        img {
-            width: 24px;
-            height: 24px;
-            filter: brightness(0) invert(1);
+        
+        i {
+            font-size: 24px;
+            color: #fff;
+        }
+                &:hover i {
+            color: lighten($accent-color, 20%);
+        }
+        &--active {
+            color: $accent-color;
         }
     }
 }
+
+

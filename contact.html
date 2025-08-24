@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS icofont -->
+<link rel="stylesheet" href="css/icofont.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <title>Boutique - Livremer</title>
+<!-- CSS links -->
+<link rel="stylesheet" href="css/minireset.css">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<!-- Header -->
 <header class="header">
     <nav class="nav">
         <div class="nav-container">
@@ -16,51 +24,57 @@
 
                 <input type="checkbox" id="menu-toggle" class="nav-toggle">
                 <label for="menu-toggle" class="nav-burger">
-                    <img src="icons/menu.png" alt="Menu">
+                    <i class="icofont-navigation-menu"></i>
                 </label>
-                
+
+                <!-- Navigation -->
                 <ul class="nav-menu">
-                   <li class="nav-item">
+                    <li class="nav-item">
                         <a href="index.html" class="nav-link">Accueil</a>
                     </li>
-                    <li class="nav-item"><a href="shop.html" class="nav-link">Boutique</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li> 
-                    <li class="nav-item"><a href="service.html" class="nav-link">Service clientèle</a></li>
+                    <li class="nav-item nav-item--dropdown">
+                        <a href="shop.html" class="nav-link">Boutique</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Romans</a></li>
+                            <li><a href="#">Bandes dessinées</a></li>
+                            <li><a href="#">Littérature jeunesse</a></li>
+                            <li><a href="#">Essais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="service.html" class="nav-link">Services client</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 
+                <!-- Navigation icons -->
                 <div class="nav-icons">
                     <a href="#" class="nav-icon">
-                    <img src="icons/heart.png" alt="Favorites">
+                        <i class="icofont-heart-alt"></i>
                     </a>
                     <a href="#" class="nav-icon">
-                         <img src="icons/cart.png" alt="сart">
+                        <i class="icofont-shopping-cart"></i>
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <i class="icofont-search-2"></i>
                     </a>
                 </div>
             </div>
         </nav>
     </header>
 
-
     <main class="main">
         <section class="section">
             <div class="container">
                 <h1 class="page-title">Contactez-nous</h1>
-                
                 <div class="contact-layout">
+                    <!-- Message -->
                     <div class="contact-form-section">
                         <h2 class="section-title">Envoyez-nous un message</h2>
                         <form class="contact-form">
-                            <div class="form-row">
                                 <div class="form-group">
                                     <label for="name" class="form-label">Nom *</label>
                                     <input type="text" id="name" name="name" class="form-input" required>
                                 </div>
-                                <div class="form-group">
-                                    <label for="surname" class="form-label">Nom de famille *</label>
-                                    <input type="text" id="surname" name="surname" class="form-input" required>
-                                </div>
-                            </div>
                             
                             <div class="form-group">
                                 <label for="email" class="form-label">Email *</label>
@@ -86,30 +100,30 @@
                         </form>
                     </div>
                     
-
+                    <!-- Contact info -->
                     <div class="contact-info-section">
                         <h2 class="section-title">Nous contacter</h2>
                         <div class="contact-info">
                             <div class="contact-info-item">
-                                <h3 class="contact-info-title">Addresse</h3>
+                                <h3 class="contact-info-title"><i class="icofont-location-pin"></i> Adresse</h3>
                                 <p class="contact-info-text">Belgique</p>
                             </div>
                             
                             <div class="contact-info-item">
-                                <h3 class="contact-info-title">Email</h3>
+                                <h3 class="contact-info-title"><i class="icofont-email"></i> Email</h3>
                                 <p class="contact-info-text">
                                     <a href="mailto:info@Livremer.com">info@Livremer.com</a></p>
                             </div>
                             
                             <div class="contact-info-item">
-                                <h3 class="contact-info-title">Téléphone</h3>
+                                <h3 class="contact-info-title"><i class="icofont-phone"></i> Téléphone</h3>
                                 <p class="contact-info-text">
                                     <a>(555) 123-BOOK</a>
                                 </p>
                             </div>
                             
                             <div class="contact-info-item">
-                                <h3 class="contact-info-title">Heures d'ouverture</h3>
+                                <h3 class="contact-info-title"><i class="icofont-clock-time"></i> Heures d'ouverture</h3>
                                 <p class="contact-info-text">
                                 Du lundi au vendredi : de 9h à 20h<br>
                                 Samedi : 10h 00 - 18h 00<br>
@@ -123,37 +137,34 @@
         </section>
     </main>
 
+<!-- Footer -->
 <footer class="footer">
         <div class="container">
             <div class="footer__grid">
                 <div class="footer-column">
-                                                        <div class="nav-link">
+                    <div class="nav-link">
                     <a href="index.html" class="nav-link">English</a>
+                    |
                     <a href="index.html" class="nav-link">Français</a>
                     </div>
-            </div>
-                    <p class="copyright">© 2025 Livremer.</p></div>
+                    <p class="copyright">© 2025 Livremer. Tous droits réservés.</p></div>
                 <div class="footer-column">
                     <h3 class="footer-title">Liens rapides</h3>
                     <ul class="links">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">À propos</a></li>
                     <li><a href="shop.html">Boutique</a></li>
+                    <li><a href="service.html">Services client</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                 <h3 class="footer-title">Suivez-nous</h3>
-                    <div class="social">
-                        <a href="#" class="social-link">
-                             <img src="icons/facebook.png">
-                        </a>
-                        <a href="#" class="social-link">
-                           <img src="icons/twitter.png">
-                        </a>
-                        <a href="#" class="social-link">
-                             <img src="icons/instagram.png">
-                    </a>
-                    </div>
+                <div class="social">
+                    <a href="#" class="social-link"><i class="icofont-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="icofont-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="icofont-instagram"></i></a>
+                </div>
                 </div>
             </div>
         </div>

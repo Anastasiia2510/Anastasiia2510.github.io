@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS icofont -->
+<link rel="stylesheet" href="css/icofont.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <title>Boutique - Livremer</title>
+<!-- CSS links -->
+<link rel="stylesheet" href="css/minireset.css">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<!-- Header -->
 <header class="header">
     <nav class="nav">
         <div class="nav-container">
@@ -16,25 +24,38 @@
 
                 <input type="checkbox" id="menu-toggle" class="nav-toggle">
                 <label for="menu-toggle" class="nav-burger">
-                    <img src="icons/menu.png" alt="Menu">
+                    <i class="icofont-navigation-menu"></i>
                 </label>
-                
+
+                <!-- Navigation -->
                 <ul class="nav-menu">
-                   <li class="nav-item">
+                    <li class="nav-item">
                         <a href="index.html" class="nav-link">Accueil</a>
                     </li>
-                    <li class="nav-item"><a href="shop.html" class="nav-link">Boutique</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li> 
-                    <li class="nav-item"><a href="service.html" class="nav-link">Service clientèle</a></li>
+                    <li class="nav-item nav-item--dropdown">
+                        <a href="shop.html" class="nav-link">Boutique</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Romans</a></li>
+                            <li><a href="#">Bandes dessinées</a></li>
+                            <li><a href="#">Littérature jeunesse</a></li>
+                            <li><a href="#">Essais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="service.html" class="nav-link">Services client</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 
+                <!-- Navigation icons -->
                 <div class="nav-icons">
                     <a href="#" class="nav-icon">
-                    <img src="icons/heart.png" alt="Favorites">
+                        <i class="icofont-heart-alt"></i>
                     </a>
                     <a href="#" class="nav-icon">
-                         <img src="icons/cart.png" alt="сart">
+                        <i class="icofont-shopping-cart"></i>
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <i class="icofont-search-2"></i>
                     </a>
                 </div>
             </div>
@@ -46,9 +67,9 @@
     <main class="main">
     <section class="section">
             <div class="container">
-                <h1 class="page-title">Service clientèle</h1>
-                
+                <h1 class="page-title">Services client</h1>
                 <div class="service-sections">
+                    <!-- Delivery -->
                     <div class="service-item">
                         <h2 class="service-item-title">Livraison</h2>
                         <div class="service-item-content">
@@ -62,7 +83,7 @@
                         </div>
                     </div>
 
-
+                    <!-- Payment -->
                     <div class="service-item">
                         <h2 class="service-item-title">Paiement</h2>
                         <div class="service-item-content">
@@ -77,7 +98,7 @@
                         </div>
                     </div>
 
-
+                    <!-- Returns -->
                     <div class="service-item">
                         <h2 class="service-item-title">Retours</h2>
                         <div class="service-item-content">
@@ -91,7 +112,7 @@
                         <p>Les frais de retour sont gratuits pour les articles endommagés ou incorrects.</p>
                         </div>
                     </div>
-
+                    <!-- Assistance -->
                     <div class="service-item">
                         <h2 class="service-item-title">Assistance</h2>
                         <div class="service-item-content">
@@ -110,38 +131,34 @@
         </section>
     </main>
 
-
+<!-- Footer -->
 <footer class="footer">
         <div class="container">
             <div class="footer__grid">
                 <div class="footer-column">
-                                                        <div class="nav-link">
+                    <div class="nav-link">
                     <a href="index.html" class="nav-link">English</a>
+                    |
                     <a href="index.html" class="nav-link">Français</a>
                     </div>
-            </div>
-                    <p class="copyright">© 2025 Livremer.</p></div>
+                    <p class="copyright">© 2025 Livremer. Tous droits réservés.</p></div>
                 <div class="footer-column">
                     <h3 class="footer-title">Liens rapides</h3>
                     <ul class="links">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">À propos</a></li>
                     <li><a href="shop.html">Boutique</a></li>
+                    <li><a href="service.html">Services client</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                 <h3 class="footer-title">Suivez-nous</h3>
-                    <div class="social">
-                        <a href="#" class="social-link">
-                             <img src="icons/facebook.png">
-                        </a>
-                        <a href="#" class="social-link">
-                           <img src="icons/twitter.png">
-                        </a>
-                        <a href="#" class="social-link">
-                             <img src="icons/instagram.png">
-                    </a>
-                    </div>
+                <div class="social">
+                    <a href="#" class="social-link"><i class="icofont-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="icofont-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="icofont-instagram"></i></a>
+                </div>
                 </div>
             </div>
         </div>
