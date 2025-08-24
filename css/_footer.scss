@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             grid-template-columns: 1fr;
             gap: 30px;
             text-align: center;
@@ -43,7 +43,7 @@
 .social {
     display: flex;
     gap: 15px;
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
         justify-content: center;
     }
 
@@ -65,7 +65,7 @@
     font-size: 0.9rem;
     color: lighten($primary-color, 40%);
     margin-top: auto;
-    @media (max-width: 768px) {
+    @media (max-width: $tablet) {
     margin-top: 0;
    order: 3;
         }
